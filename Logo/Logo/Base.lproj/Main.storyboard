@@ -17,10 +17,10 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qbH-cw-Mdf" customClass="LogoView" customModule="Logo" customModuleProvider="target">
                                 <rect key="frame" x="20" y="266" width="374" height="326"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="qbH-cw-Mdf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1UH-7n-gcS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qbH-cw-Mdf" secondAttribute="bottom" constant="270" id="8Ud-vD-4PA"/>

@@ -12,36 +12,31 @@ class LogoView: UIView {
     
     
     override init(frame: CGRect) {
-        super.init(frame: frame)
-        backgroundColor = UIColor.clear
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        backgroundColor = UIColor.clear
+             super.init(frame: frame)
+             backgroundColor = UIColor.clear
+         }
+         
+         required init?(coder aDecoder: NSCoder) {
+             super.init(coder: aDecoder)
+             backgroundColor = UIColor.clear
+         }
         
-    }
-    
-    
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-        
-        if let context = UIGraphicsGetCurrentContext() {
-            
-            
-            let rectangle = CGRect(x: rect.minX, y: rect.minY, width: rect.width, height: (rect.height / 3) * 2)
-            let roundedPath = CGPath(roundedRect: rectangle, cornerWidth: 8.0, cornerHeight: 8.0, transform: nil)
-    
-            context.addPath(roundedPath)
-            context.setFillColor(UIColor.white.cgColor)
-            context.fillPath()
-            
-            
+         
+        override func draw(_ rect: CGRect) {
+            if let context = UIGraphicsGetCurrentContext() {
+                
+                //MARK: Rectangle
+                let rectangle = CGRect(x: rect.minX, y: rect.minY, width: rect.width, height: (rect.height / 3) * 2)
+                let roundedPath = CGPath(roundedRect: rectangle,
+                                            cornerWidth: 6.0,
+                                            cornerHeight: 6.0,
+                                            transform: nil)
+                context.addPath(roundedPath)
+                context.setFillColor(UIColor.red.cgColor)
+                context.fillPath()
+                
+                
+            }
         }
-        
+
     }
-    
-    
-}
-
-
